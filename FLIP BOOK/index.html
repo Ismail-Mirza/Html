@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Flip Book Effect</title>
+	</head>
+	<body>
+		<div class="book">
+			<input type="checkbox" id="c1" />
+			<input type="checkbox" id="c2" />
+			<input type="checkbox" id="c3" />
+			<div id="cover">
+				<img src="/data/1.jpg" alt="" />
+			</div>
+			<div class="flip-book">
+				<div class="flip" id="p1">
+					<div class="back">
+						<img src="/data/2.jpg" alt="" />
+						<label class="back-btn" for="c1">Back</label>
+					</div>
+					<div class="front">
+						<h1>Apple</h1>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. ?Lorem
+							ipsum dolor sit amet consectetur, adipisicing elit. Atque quod
+							asperiores quasi praesentium possimus, vitae maiores fuga quam
+							magnam? Placeat dolore deleniti quisquam harum expedita voluptatum
+							maiores. Cupiditate, ad voluptates?
+						</p>
+					</div>
+					<label class="next-btn" for="c1">Next</label>
+				</div>
+				<div class="flip" id="p2">
+					<div class="back">
+						<img src="/data/3.jpg" alt="" />
+						<label class="back-btn" for="c2">Back</label>
+					</div>
+					<div class="front">
+						<h1>Strawberry</h1>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. ?Lorem
+							ipsum dolor sit amet consectetur, adipisicing elit. Atque quod
+							asperiores quasi praesentium possimus, vitae maiores fuga quam
+							magnam? Placeat dolore deleniti quisquam harum expedita voluptatum
+							maiores. Cupiditate, ad voluptates?
+						</p>
+					</div>
+					<label class="next-btn" for="c2">Next</label>
+				</div>
+				<div class="flip" id="p3">
+					<div class="back">
+						<img src="/data/4.jpg" alt="" />
+						<label class="back-btn" for="c3">Back</label>
+					</div>
+					<div class="front">
+						<h1>Mango</h1>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. ?Lorem
+							ipsum dolor sit amet consectetur, adipisicing elit. Atque quod
+							asperiores quasi praesentium possimus, vitae maiores fuga quam
+							magnam? Placeat dolore deleniti quisquam harum expedita voluptatum
+							maiores. Cupiditate, ad voluptates?
+						</p>
+					</div>
+					<label class="next-btn" for="c3">Next</label>
+				</div>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>

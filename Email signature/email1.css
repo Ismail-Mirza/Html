@@ -1,0 +1,7 @@
+.container{
+  display: flex;
+  width: 244px;
+}
+.fab{
+  font-size: 200px;
+}

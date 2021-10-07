@@ -1,0 +1,15 @@
+# python3
+
+def solve():
+    N,X= [int(e) for e in input().split()]
+    A = [ int(e) for e in input().split()]
+    B = []
+    for i in range(N):
+        B.append( [(A[i]-1)// X, i+1])
+    B.sort()
+    return " ".join([ str(e[1]) for e in B ])
+ 
+T=int(input());
+ 
+for t in range(1,T+1):
+    print ("Case #" + str(t) + ": " + solve())

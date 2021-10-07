@@ -1,0 +1,172 @@
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Mean Page</title>
+  </head>
+  <body>
+
+    <!-- header secton  -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-light" style="background-color: #e3f2fd;">
+  <a class="navbar-brand" href="#">TypeNow</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Course
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="">English</a>
+          <a class="dropdown-item" href="#">Bengali (Avro)</a>
+          <a class="dropdown-item" href="#">Bengali (Bijoy)</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sign Up</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    </header>
+
+    <!-- end heeder section -->
+    <!-- start display -->
+    <div class="container" id="override">
+    <div class="container" id="show_start_up">
+      <div class="row" id="showSummary">
+        <div class="col-md-6 col-xs-6">
+          <div id="countdown">1:00</div>
+        </div>
+        <div class="col-md-6 col-xs-6">
+          <div id="showSpeed">0<small>wpm</small></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-xs-12">
+          <div id="ul_easy">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end display -->
+
+    <div class="container d-none d-sm-block">
+      <div class="row">
+        <div class="col-sm-10 col-xs-10 ml-3">
+        <div class="keyboard_bg">
+        <div class="keyboard-row">
+        <div class="symbol 96 126" id="192"><span class="off">`</span><span class="on">~</span></div>
+        <div class="symbol 49 33" id="49"><span class="off">1</span><span class="on">!</span></div>
+        <div class="symbol 50 64" id="50"><span class="off">2</span><span class="on">@</span></div>
+        <div class="symbol 51 35" id="51"><span class="off">3</span><span class="on">#</span></div>
+        <div class="symbol 52 36" id="52"><span class="off">4</span><span class="on">$</span></div>
+        <div class="symbol 53 37" id="53"><span class="off">5</span><span class="on">%</span></div>
+        <div class="symbol 54 94" id="54"><span class="off">6</span><span class="on">^</span></div>
+        <div class="symbol 55 38" id="55"><span class="off">7</span><span class="on">&amp;</span></div>
+        <div class="symbol 56 42" id="56"><span class="off">8</span><span class="on">*</span></div>
+        <div class="symbol 57 40" id="57"><span class="off">9</span><span class="on">(</span></div>
+        <div class="symbol 58 41" id="48"><span class="off">0</span><span class="on">)</span></div>
+        <div class="symbol 45 95" id="189"><span class="off">-</span><span class="on">_</span></div>
+        <div class="symbol 61 43" id="187"><span class="off">=</span><span class="on">+</span></div>
+        <div class="delete lastitem back" id="8">Backspace</div>
+        </div>
+        <div class="keyboard-row">
+        <div class="tab 9" id="9">tab</div>
+        <div class="letter 113 81" id="81">q</div>
+        <div class="letter 119 87" id="87">w</div>
+        <div class="letter 101 69" id="69">e</div>
+        <div class="letter 114 82" id="82">r</div>
+        <div class="letter 116 84" id="84">t</div>
+        <div class="letter 121 89" id="89">y</div>
+        <div class="letter 117 85" id="85">u</div>
+        <div class="letter 105 73" id="73">i</div>
+        <div class="letter 111 79" id="79">o</div>
+        <div class="letter 112 80" id="80">p</div>
+        <div class="symbol 91 123" id="219"><span class="off">[</span><span class="on">{</span></div>
+        <div class="symbol 93 125" id="221"><span class="off">]</span><span class="on">}</span></div>
+        <div class="symbol lastitem 92 124" id="220"><span class="off">\</span><span class="on">|</span></div>
+        </div>
+        <div class="keyboard-row">
+        <div class="capslock" id="20">caps lock</div>
+        <div class="letter 65 97" id="65">a</div>
+        <div class="letter 83 115" id="83">s</div>
+        <div class="letter 68 100" id="68">d</div>
+        <div class="letter 70 102" id="70">f</div>
+        <div class="letter 71 103" id="71">g</div>
+        <div class="letter 72 104" id="72">h</div>
+        <div class="letter 74 106" id="74">j</div>
+        <div class="letter 75 107" id="75">k</div>
+        <div class="letter 76 108" id="76">l</div>
+        <div class="symbol 59 58" id="186"><span class="off">;</span><span class="on">:</span></div>
+        <div class="symbol 39 34" id="222"><span class="off">'</span><span class="on">&quot;</span></div>
+
+        <div class="enter lastitem 13 10" id="13">Enter</div>
+        </div>
+        <div class="keyboard-row">
+        <div class="left-shift" id="">shift</div>
+        <div class="letter 90 122" id="90">z</div>
+        <div class="letter 88 120" id="88">x</div>
+        <div class="letter 67 99" id="67">c</div>
+        <div class="letter 86 118" id="86">v</div>
+        <div class="letter 66 98" id="66">b</div>
+        <div class="letter 78 110" id="78">n</div>
+        <div class="letter 77 109" id="77">m</div>
+        <div class="symbol 44 60" id="188"><span class="off">,</span><span class="on">&lt;</span></div>
+        <div class="symbol 46 62" id="190"><span class="off">.</span><span class="on">&gt;</span></div>
+        <div class="symbol 47 63" id="191"><span class="off">/</span><span class="on">?</span></div>
+        <div class="right-shift" id="">shift</div>
+        </div>
+        <div class="keyboard-row">
+        <div class="left-ctrl" id="17">Ctrl</div>
+        <div class="desktop" id="NaN">logo</div>
+        <div class="left-alt" id="18">Alt</div>
+        <div class="space lastitem 32" id="32">&nbsp;</div>
+        <div class="right-alt" id="18">Alt</div>
+        <div class="right-desktop" id="NaN"></div>
+        <div class="para-logo" id="93">pL</div>
+        <div class="right-ctrl" id="17">Ctrl</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <!-- end keyboard -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="../static/javascript/utility.js">
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../static/javascript/app.js">
+
+    </script>
+
+
+  </body>
+</html>

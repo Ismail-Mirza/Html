@@ -1,0 +1,15 @@
+body{
+  margin:0;
+  background-color: black;
+}
+p{
+  background:white;
+  display: inline-flex;
+  align-items:center;
+  justify-content: center;
+  font-size: 50px;
+  margin: 0;
+  height: 70px;
+  width: 200px;
+
+}

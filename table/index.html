@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+
+  table, th, td {
+  border: 1px solid darkblue;
+  border-collapse: collapse;
+}
+
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+#table tr:nth-child(even) {
+  background-color: rgba(0, 238, 170, 0.9);
+}
+#table tr:nth-child(odd) {
+ background-color: #fff;
+}
+#table th {
+  background-color: darkblue;
+  color: white;
+}
+
+
+#table tr:hover{
+  background-color:#eee;
+  color:red;
+  font-weight:bold;
+
+}
+
+caption{
+
+  border-bottom: 2px solid darkblue;
+  margin-bottom:20px;
+
+}
+
+tr td:first-child{
+  font-weight:bold;
+  font-style:italic;
+}
+#table{
+  width:70%;
+}
+</style>
+<body>
+<table id="table">
+  <caption><h3>Emergency Hospital & Clinic Info</h3></caption>
+  <tr>
+    <th>Name of Hospital</th>
+    <th>Address</th>
+    <th>Contact</th>
+  </tr>
+  <tr>
+    <td>Feni Sadar Hospital</td>
+    <td>Abu Bakker Sarak, Feni</td>
+    <td>01855-291503</td>
+  </tr>
+  <tr>
+    <td>Ali Newaz Medical Center</td>
+    <td>188, Trunk Road, Feni</td>
+    <td>01711-360225</td>
+  </tr>
+  <tr>
+    <td>New Uposhom Genarel Hospital, Feni.</td>
+    <td>Shahid Shahidullah Kaisar Rd, Mohipal</td>
+    <td>01830-517500</td>
+  </tr>
+  <tr>
+    <td>Feni Diabetics Hospital</td>
+    <td>Mizan Rd, Feni</td>
+    <td>0331-74870</td>
+  </tr>
+  <tr>
+    <td>Mission Hospital</td>
+    <td>Sufi Sadar Uddin Rd, Feni</td>
+    <td>01819-425494</td>
+  </tr>
+  <tr>
+    <td>Cosmo Politan Hospital</td>
+    <td>Grand Trunk Rd, Feni</td>
+    <td>01711-356521</td>
+  </tr>
+  <tr>
+    <td>New Alrazi hospital</td>
+    <td>Feni Sadar</td>
+    <td>01823-333333</td>
+  </tr>
+  <tr>
+    <td>Concept Hospital</td>
+    <td>Grand Trunk Rd, Feni</td>
+    <td>0331-63422</td>
+  </tr>
+  <tr>
+    <td>Feni Medinova Hospital (Pvt) Ltd.</td>
+    <td>Shahid Shahidullah Kaisar Rd, Feni</td>
+    <td>01949-113304</td>
+  </tr>
+  <tr>
+    <td>Mediscan Hospital Feni</td>
+    <td>Shahid Shahidullah Kaisar Rd, Feni</td>
+    <td>01711-426233</td>
+  </tr>
+  <tr>
+    <td>Doctor's point</td>
+    <td>Feni Sadar</td>
+    <td>01794-206206</td>
+  </tr>
+  <tr>
+    <td>ZU Model Hospital</td>
+    <td>Feni Sadar</td>
+    <td>01837-290638</td>
+  </tr>
+
+
+</table>
+
+<h2>Please Give Your Opinions</h2>
+
+<form action="/action_page.php">
+  <label for="name">Enter Your Name:</label>
+  <input type="text" name="fname" ><br><br>
+  <label for="name">Are you?</label><br><br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+  <br><br>
+
+  <label for="email">Enter Your Email:</label>
+  <input type="text" name="email" ><br><br>
+  <label for="email">Enter Your Number:</label>
+  <input type="text" name="number" ><br><br>
+  <label for="opinion">Enter Your Opinions:</label>
+  <input type="text" name="opinion" ><br><br>
+  <input type="submit" value="Submit Your Opinion">
+</form>
+</body>
+</html>

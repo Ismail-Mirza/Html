@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/a4e59a4e2d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>madinafoam.com | Inventory</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-div="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Order</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Inventory</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Production</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+    </ul>
+
+    
+ </div>
+  <a class="navbar-brand" href="#">MadinaFoam Icon</a>
+</nav>
+
+<div class="madina--container">
+<div class="add">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<h1>New Material</h1>
+<form action="">
+    <div class="input-group">
+        <div for="tda">TDA</div>
+        <input type="text" placeholder="Quantity of TDA(Kg)" name="tda" id="tda" >
+    </div>
+    <div class="input-group">
+        <div>Co-polymer</div>
+        <input type="text" placeholder="Quantity of Co Polymer(Kg)" name="copolymer" id="copolymer" >
+    </div>
+    <div class="input-group">
+        <div for="silocon">Silocon</div>
+        <input type="text" placeholder="Quantity of Silocon(Kg)" name="silocon" id="silocon">
+    </div>
+    <div class="input-group">
+        <div for="so">So</div>
+        <input type="text" placeholder="Quantity of SO(Kg)" id="so" name="so" >
+    </div>
+    <div class="input-group">
+        <div for="mc">MC</div>
+        <input type="text" placeholder="Quantity of MC(Kg)" id="mc" name="mc" >
+    </div>
+    <div class="input-group">
+        <div for="power">POWER</div>
+        <input type="text" placeholder="Quantity of POWER(Kg)" id="power" name="power">
+    </div>
+    <div class="input-group">
+        <div for="color">Colour</div>
+        <input type="text" placeholder="Quantity of TDA(Kg)" id="color" name="colour" >
+    </div>
+    <div class="btn-group">
+        <p class="msg">I am msg</p>
+        <a href="" class="btn--cancel">Cancel</a>
+        <button class="mybtn btn-primary btn-size">Save</button>
+    </div>
+</form>
+
+    </div>
+</div>
+<div class="inventory" id="main">
+<div class="new" id="addnew" onclick="openNav(this)"><i class="fas fa-cart-plus"></i></div>
+ <h1>Inventory</h1>
+  <div class="info">
+    <div>Month <b>:June</b></div>
+    <div>Year <b>: 2021</b></div>
+  </div>
+  <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Index</th>
+      <th scope="col">Raw Material</th>
+      <th scope="col">Old Material(kg) </th>
+      <th scope="col">New Material(kg)</th>
+      <th scope="col">Total Material(kg)</th>
+      <th scope="col">Used Material(kg)</th>
+      <th scope="col">Net Material(kg)</th>
+      <th scope="col">Last Material Added Date</th>
+      <th scope="col">Added By</th>
+      <th scope="col">Last Used Material Date</th>
+      <th scope="col">Used By</th>
+    </tr>
+   
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>TDA</td>
+      <td>100</td>
+      <td>200</td>
+      <td>300</td>
+      <td>50</td>
+      <td>250</td>
+      <td>1 June 2021</td>
+      <td>Maruf</td>
+      <td>2 June 2021</td>
+      <td>Employpee Name</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Co-Polymer</td>
+      <td>100</td>
+      <td>200</td>
+      <td>300</td>
+      <td>50</td>
+      <td>250</td>
+      <td>1 June 2021</td>
+      <td>Maruf</td>
+      <td>2 June 2021</td>
+      <td>Employpee Name</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Silocon</td>
+      <td>100</td>
+      <td>200</td>
+      <td>300</td>
+      <td>50</td>
+      <td>250</td>
+      <td>1 June 2021</td>
+      <td>Maruf</td>
+      <td>2 June 2021</td>
+      <td>Employpee Name</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>So</td>
+      <td>100</td>
+      <td>200</td>
+      <td>300</td>
+      <td>50</td>
+      <td>250</td>
+      <td>1 June 2021</td>
+      <td>Maruf</td>
+      <td>2 June 2021</td>
+      <td>Employpee Name</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Mc</td>
+      <td>100</td>
+      <td>200</td>
+      <td>300</td>
+      <td>50</td>
+      <td>250</td>
+      <td>1 June 2021</td>
+      <td>Maruf</td>
+      <td>2 June 2021</td>
+      <td>Employpee Name</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Power</td>
+      <td>100</td>
+      <td>200</td>
+      <td>300</td>
+      <td>50</td>
+      <td>250</td>
+      <td>1 June 2021</td>
+      <td>Maruf</td>
+      <td>2 June 2021</td>
+      <td>Employpee Name</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Colour</td>
+      <td>100</td>
+      <td>200</td>
+      <td>300</td>
+      <td>50</td>
+      <td>250</td>
+      <td>1 June 2021</td>
+      <td>Maruf</td>
+      <td>2 June 2021</td>
+      <td>Employpee Name</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/default.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

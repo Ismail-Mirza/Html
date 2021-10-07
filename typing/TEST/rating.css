@@ -1,0 +1,43 @@
+/*code for ratins */
+.rating-container{
+  margin:auto;
+  text-align: center;
+  margin-top: 200px;
+
+}
+/*changeing rating wrapper direction*/
+.rating-wrapper{
+  direction: rtl;
+}
+.rating-wrapper input{
+  display: none;
+}
+.rating-wrapper label {
+  display: inline-block;
+  width: 130px;
+  position: relative;
+  cursor: pointer;
+  }
+  .rating-wrapper label:before{
+    content: "\2605";
+    position: absolute;
+    font-size: 120px;
+    display: inline-block;
+    top: 0;
+    left: 0;
+  }
+  .rating-wrapper label:after{
+    content: "\2605";
+    position: absolute;
+    font-size: 120px;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    color:yellow;
+    opacity: 0;
+  }
+  .rating-wrapper label:hover:after,
+  .rating-wrapper label:hover ~ label:after,
+  .rating-wrapper input:checked ~ label:after{
+    opacity: 1;
+  }

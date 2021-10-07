@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap')
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: rgba(236, 240, 241,1.0);
+  font-color:#00000;
+  height: 1056px;
+  margin: 0 auto;
+}
+.header{
+
+}
+#ul_easy{
+  display: flex;
+  list-style: none;
+  margin:0 auto;
+  padding: 0;
+
+}
+#ul_easy>div{
+  height:80px;
+  width: 80px;
+  margin: 1em;
+  border: 2px solid teal;
+  font-size: 40px;
+  text-align: center;
+}
+@font-face {
+  font-family:'Ds-digital';
+  src: url('DS-DIGIT.TTF'); /* IE9 Compat Modes */
+  src:url('DS-DIGIT.TTF')  format('truetype'), /* Safari, Android, iOS */
+}
+#countdown{
+  background: #C1C1C1;
+  padding: 10px 10px;
+  font-size: 80px;
+  width: 240px;
+  height: 90px;
+  border-radius: 30px;
+  margin: 0;
+  color: #1A1A1A;
+  border: 5px solid #242424;
+  align-items: center;
+  display:inline-flex;
+  justify-content: center;
+  font-family: 'Ds-digital', Fallback, sans-serif;
+  -webkit-box-shadow: 3px 3px 13px 4px rgba(36,36,36,1);
+  -moz-box-shadow: 3px 3px 13px 4px rgba(36,36,36,1);
+  box-shadow: 3px 3px 13px 4px rgba(36,36,36,1);
+}
+#showSpeed{
+  background: #C1C1C1;
+  padding: 10px 10px;
+  font-size: 80px;
+  width: 240px;
+  height: 90px;
+  border-radius: 30px;
+  margin: 0;
+  color: #1A1A1A;
+  border: 5px solid #242424;
+  align-items: center;
+  display:inline-flex;
+  justify-content: center;
+  font-family: 'Ds-digital', Fallback, sans-serif;
+  -webkit-box-shadow: 3px 3px 13px 4px rgba(36,36,36,1);
+  -moz-box-shadow: 3px 3px 13px 4px rgba(36,36,36,1);
+  box-shadow: 3px 3px 13px 4px rgba(36,36,36,1);
+}
+/* start keyboard style */
+/* #container_keyboard {
+margin: 100px auto;
+width: 800px;
+background-color: teal;
+} */
+/* #write {
+margin: 0 0 5px;
+padding: 5px;
+width: 671px;
+height: 200px;
+font: 1em/1.5 Verdana, Sans-Serif;
+background: #fff;
+border: 1px solid #f9f9f9;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+} */
+#container_keyboard{
+  margin: 0 auto;
+  background-color: #D9DADB;
+  padding: 10px;
+  padding-right: 0;
+  border-radius: 60px;
+
+
+}
+#keyboard {
+/* display:flex; */
+
+margin: 0;
+list-style: none;
+}
+
+  #keyboard li {
+    float: left;
+    /* clear:both; */
+    font-size: 20px;
+    margin: 0 5px 5px 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #f9f9f9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    }
+    /* #keyboard li::before{
+      content: "";
+      display: table;
+      clear:both;
+    } */
+        .capslock, .tab, .left-shift {
+        clear: left;
+        }
+      #keyboard .tab, #keyboard .delete {
+      width: 120px;
+      }
+      #keyboard .capslock {
+      width: 120px;
+      }
+      #keyboard .enter {
+      width: 126px;
+      }
+      #keyboard .left-shift {
+      width: 153px;
+      }
+      #keyboard .right-shift {
+      width: 158px;
+      }
+
+
+
+        #keyboard .left-ctrl{
+        width: 117px;
+        }
+        #keyboard .desktop, #keyboard .right-alt, #keyboard .left-alt{
+        width: 66px;
+        }
+        #keyboard .space {
+        width: 385px;
+        }
+
+        #keyboard .right-desktop{
+          width: 93px;
+        }
+        #keyboard .para-logo {
+          width: 45px;
+        }
+        #keyboard .right-ctrl{
+          width: 93px;
+        }
+        .lastitem {
+        margin-right: 0;
+        }
+        .uppercase {
+        text-transform: uppercase;
+        }
+        .on {
+        display: none;
+        }
+        #keyboard li:hover {
+        position: relative;
+        top: 1px;
+        left: 1px;
+        border-color: #e5e5e5;
+        cursor: pointer;
+        }
+
+
+/* end keyboard style */
+/* start flex keyboard */
+.keyboard_bg{
+  background-color: #D9DADB;
+  padding: 20px;
+  border-radius: 20px;
+}
+.keyboard-row{
+  display: flex;
+
+
+}
+.keyboard-row > div {
+
+  font-size: 20px;
+  margin: 0 5px 5px 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid rgba(44, 62, 80,.5);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  }
+  .keyboard-row .delete {
+  width: 120px;
+  }
+  .keyboard-row .tab {
+  width: 120px;
+  }
+  .keyboard-row .capslock {
+  width: 120px;
+  }
+  .keyboard-row .enter {
+  width: 126px;
+  }
+  .keyboard-row .left-shift {
+  width: 153px;
+  }
+  .keyboard-row .right-shift {
+  width: 158px;
+  }
+
+
+
+    .keyboard-row .left-ctrl{
+    width: 117px;
+    }
+    .keyboard-row .desktop, .keyboard-row .right-alt, .keyboard-row .left-alt{
+    width: 66px;
+    }
+    .keyboard-row .space {
+    width: 385px;
+    }
+
+    .keyboard-row .right-desktop{
+      width: 93px;
+    }
+    .keyboard-row .para-logo {
+      width: 45px;
+    }
+    .keyboard-row .right-ctrl{
+      width: 93px;
+    }
+    .uppercase {
+    text-transform: uppercase;
+    }
+    .on {
+    display: none;
+    }
+    .keyboard-row > div:hover {
+    position: relative;
+    top: 1px;
+    left: 1px;
+    border: 1.5px solid rgba(44, 62, 80,1);
+    cursor: pointer;
+    }
+
+    /* Responsive Work */
+
+@media screen and (min-width: 500px){
+  html{
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 570px){
+  html{
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 620px){
+  html{
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 680px){
+  html{
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 720px){
+  html{
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 800px){
+  html{
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 860px){
+  html{
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 920px){
+  html{
+    font-size: 21px;
+  }
+}
+@media screen and (min-width: 1000px){
+  html{
+    font-size: 22px;
+  }
+}

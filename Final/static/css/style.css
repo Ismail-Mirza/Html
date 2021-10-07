@@ -1,0 +1,143 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: rgba(236, 240, 241,1.0);
+  margin: 0 auto;
+  font-size: 1.6rem;
+
+}
+header{
+
+
+}
+.nav-link{
+  color: #fff; !important
+}
+/* Countdown and remeaning start*/
+.position{
+  position: absolute;
+  top:70;
+  right: 50%;
+}
+
+#countdown ,#showSpeed {
+  padding: 0.6rem 0.5rem;
+  margin-right: 2px;
+  font-size: 4rem;
+  text-align: center;}
+
+/* Countdown and remeaning end*/
+
+
+#ul_easy{
+  list-style: none;
+  margin:0 auto;
+  padding: 0;
+
+}
+#ul_easy li {
+  float: left;
+  height:8rem;
+  width: 8rem;
+  margin: 1.5rem;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  border: 0.2rem solid teal;
+  border-radius: 0.3rem;
+  font-size: 4rem;
+  text-align: center;
+}
+
+
+
+/* start flex keyboard */
+.keyboard_bg{
+  background-color: #D9DADB;
+  padding: 2rem;
+  border-radius: 2rem;fa
+}
+.keyboard-row{
+  display: flex;
+
+
+}
+.keyboard-row > div {
+
+  font-size: 1.8rem;
+  margin: 0 .5rem .5rem 0;
+  width: 6rem;
+  height: 4.8rem;
+  line-height: 6rem;
+  text-align: center;
+  background: #fff;
+  border: .1rem solid rgba(44, 62, 80,.5);
+  -moz-border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  }
+  .keyboard-row .delete {
+  width: 12rem;
+  }
+  .keyboard-row .tab {
+  width: 12rem;
+  }
+  .keyboard-row .capslock {
+  width: 12rem;
+  }
+  .keyboard-row .enter {
+  width: 12.6rem;
+  }
+  .keyboard-row .left-shift {
+  width: 15.3rem;
+  }
+  .keyboard-row .right-shift {
+  width: 15.8rem;
+  }
+
+
+
+    .keyboard-row .left-ctrl{
+    width: 11.7rem;
+    }
+    .keyboard-row .desktop, .keyboard-row .right-alt, .keyboard-row .left-alt{
+    width: 6.6rem;
+    }
+    .keyboard-row .space {
+    width: 38.5rem;
+    }
+
+    .keyboard-row .right-desktop{
+      width: 9.3rem;
+    }
+    .keyboard-row .para-logo {
+      width: 4.5rem;
+    }
+    .keyboard-row .right-ctrl{
+      width: 9.3rem;
+    }
+    .uppercase {
+    text-transform: uppercase;
+    }
+    .on {
+    display: none;
+    }
+    .keyboard-row > div:hover {
+    position: relative;
+    top: .1rem;
+    left: .1rem;
+    border: .15rem solid rgba(44, 62, 80,1);
+    cursor: pointer;
+    }
+
+    /* Responsive Work */

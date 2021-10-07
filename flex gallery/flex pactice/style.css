@@ -1,0 +1,17 @@
+.flex-container{
+  display:flex;
+  background: green;
+  padding: 10px;
+
+
+
+}
+.flex-item{
+  background: red;
+  border: 1px solid yellow;
+  font-size: 20px;
+  padding: 10px;
+  margin: 1px;
+  width: 100px;
+  flex: 1;
+}

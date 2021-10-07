@@ -1,0 +1,21 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	background: rgb(238, 236, 236);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container {
+	background: #ffffff;
+	width: 60vw;
+	height: 60vh;
+	padding: 30px;
+}
+#output {
+	overflow-y: scroll;
+	height: 40vh;
+}
+.post {
+	background: #e4dcdc;
+}

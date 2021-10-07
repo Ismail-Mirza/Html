@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#pre-loader
+{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #fff url("again.gif") no-repeat center;
+  z-index: 999;
+}
+
+
+.container>div:nth-child(odd){
+  margin: 50px;
+  color:cyan;
+  font-size: 20px;
+  background: #fff;
+}
+.container>div:nth-child(even){
+  margin: 50px;
+  background: cyan;
+  color:blue;
+  padding: 20px;
+
+}

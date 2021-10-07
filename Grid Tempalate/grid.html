@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Css Grid</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+    .box1{
+      background:lightcoral;
+
+    }
+    .box2{
+      background:lightblue;
+
+    }
+    .box3{
+      background:lightgreen;
+
+    }
+    main{
+      height:100vh;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      grid-template-rows:1fr 1fr ;
+      grid-template-areas:
+      "box1 box2"
+      "box3 box3";
+
+    }
+
+    .box1{
+      grid-area:box1;
+    }
+    .box2{
+      grid-area:box2;
+    }
+    .box3{
+      grid-area:box3;
+    }
+
+  </style>
+</head>
+<body>
+    <main>
+      <div class="box1">
+        <h1>Box 1</h1>
+      </div>
+      <div class="box2">
+        <h1>Box 2</h1>
+      </div>
+      <div class="box3">
+        <h1>Box 3</h1>
+      </div>
+    </main>
+</body>
+</html>

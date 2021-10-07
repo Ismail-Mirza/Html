@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <table width="480" style="font-size: 11pt; font-family: Arial, sans-serif;" cellpadding="0" cellspacing="0" border="0" class="ng-scope">
+  <tbody>
+   <tr>
+
+    <!-- ngIf: showField('logo') --><td ng-if="showField('logo')" width="160" style="font-size: 10pt; font-family: Arial, sans-serif; width: 160px; vertical-align: top;" valign="top" class="ng-scope">
+  		<!-- ngIf: showField('logoURL') --><a ng-if="showField('logoURL')" href="https://www.my-company.com/" target="_blank" class="ng-scope"><img border="0" alt="Logo" width="125" style="width:125px; height:auto; border:0;" ng-src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/hexagonal-logo/logo.png" src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/hexagonal-logo/logo.png"></a><!-- end ngIf: showField('logoURL') -->
+  		<!-- ngIf: !showField('logoURL') -->
+    </td><!-- end ngIf: showField('logo') -->
+    <!-- ngIf: !showField('logo') -->
+
+
+   <td valign="top" width="270" style="width:270px; vertical-align: top; line-height:11px; border-right:2px solid #29abe1">
+
+  	<table cellpadding="0" cellspacing="0" border="0" width="270">
+  	<tbody>
+  		<tr>
+  			<td style="font-size:12pt; height:14px; line-height:14px"><strong style="font-family: Arial, sans-serif;font-size: 12pt;color:#29abe1;" class="ng-binding">Mohammad Ismail</strong></td>
+  		</tr>
+  		<tr>
+  			<td style="font-size:9pt; height:14px; line-height:14px">
+  				<!-- ngIf: showField('title') --><span ng-if="showField('title')" style="font-family: Arial, sans-serif; font-size:9pt; color:#000000;" class="ng-binding ng-scope">Student</span><!-- end ngIf: showField('title') -->
+  				<!-- ngIf: showField('company') --><span ng-if="showField('company')" style="font-family: Arial, sans-serif; font-size:9pt; color:#000000;" class="ng-binding ng-scope"> | BUET</span><!-- end ngIf: showField('company') -->
+  			</td>
+  		</tr>
+  		<tr>
+  			<td style="height:14px; line-height:14px">&nbsp;</td>
+  		</tr>
+  		<tr>
+  			<td style="font-size:9pt; height:14px; line-height:14px">
+  				<!-- ngIf: showField('mobile') --><span ng-if="showField('mobile')" style="font-family: Arial, sans-serif;color:#000000;FONT-SIZE: 9pt" class="ng-binding ng-scope"><strong>M</strong> (800) 555-0299</span><!-- end ngIf: showField('mobile') -->
+  				<!-- ngIf: showField('phone') --><span ng-if="showField('phone')" style="font-family: Arial, sans-serif;color:#000000;FONT-SIZE: 9pt" class="ng-binding ng-scope"> | <strong>P</strong> (800) 555-0199</span><!-- end ngIf: showField('phone') -->
+  			</td>
+  		</tr>
+  		<tr>
+  			<td style="font-size:9pt; height:12px; line-height:12px">
+  				<!-- ngIf: showField('email') --><span ng-if="showField('email')" style="font-family: Arial, sans-serif;color:#000000;FONT-SIZE: 9pt" class="ng-binding ng-scope"><strong>E</strong>  ismail.me.buet@gmail.com</span><!-- end ngIf: showField('email') -->
+  			</td>
+  		</tr>
+  		<tr>
+  			<td style="height:14px; line-height:14px">&nbsp;</td>
+  		</tr>
+  		<tr>
+  			<td style="font-size:9pt; height:12px; line-height:12px">
+  				<!-- ngIf: isAnyFieldEntered('company, address1, address2') --><span ng-if="isAnyFieldEntered('company, address1, address2')" style="font-family: Arial, sans-serif;color:#000000;FONT-SIZE: 9pt" class="ng-binding ng-scope">, </span><!-- end ngIf: isAnyFieldEntered('company, address1, address2') -->
+  			</td>
+  		</tr>
+
+  		<tr>
+  			<td style="font-size:9pt; height:12px; line-height:12px">
+  				<!-- ngIf: showField('website') --><span ng-if="showField('website')" class="ng-scope"><a href="http://www.ismail.me" target="_blank" rel="noopener" style=" text-decoration:none;"><strong style="color:#29abe1; font-family:Arial, sans-serif; font-size:9pt" class="ng-binding">www.ismail.me</strong></a></span><!-- end ngIf: showField('website') -->
+  			</td>
+  		</tr>
+  	</tbody><tbody>
+  	</tbody></table>
+
+
+
+
+    </td>
+
+    <td style="vertical-align: top; padding-left:10px" valign="top" width="35">
+
+  		<table cellpadding="0" cellspacing="0" border="0" width="25">
+  			<tbody><!-- ngIf: showField('facebookURL') --><tr ng-if="showField('facebookURL')" class="ng-scope">
+  				<td width="25" height="30" valign="top" style="vertical-align: top;"><a href="https://www.facebook.com/MyCompany" target="_blank" rel="noopener"><img border="0" width="26" height="25" ng-src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/hexagonal-logo/fb.png" alt="facebook icon" style="border:0; height:25px; width:26px;" src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/hexagonal-logo/fb.png"></a></td>
+  			</tr><!-- end ngIf: showField('facebookURL') -->
+  			<!-- ngIf: showField('twitterURL') --><tr ng-if="showField('twitterURL')" class="ng-scope">
+  				<td width="25" height="30" valign="top" style="vertical-align: top;"><a href="https://twitter.com/MyCompany404" target="_blank" rel="noopener"><img border="0" width="26" height="25" ng-src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/hexagonal-logo/tt.png" alt="twitter icon" style="border:0; height:25px; width:26px;" src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/hexagonal-logo/tt.png"></a></td>
+  			</tr><!-- end ngIf: showField('twitterURL') -->
+  			<!-- ngIf: showField('youtubeURL') --><tr ng-if="showField('youtubeURL')" class="ng-scope">
+  				<td width="25" height="30" valign="top" style="vertical-align: top;"><a href="https://www.youtube.com/user/MyCompanyChannel" target="_blank" rel="noopener"><img border="0" width="26" height="25" ng-src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/hexagonal-logo/yt.png" alt="youtube icon" style="border:0; height:25px; width:26px" src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/hexagonal-logo/yt.png"></a></td>
+  			</tr><!-- end ngIf: showField('youtubeURL') -->
+  		</tbody></table>
+
+    </td>
+
+    <td style="vertical-align: top;" valign="top" width="25">
+
+  		<table cellpadding="0" cellspacing="0" border="0" width="25">
+  			<tbody><tr><td style="height:12px; font-size:1px" height="12">&nbsp;</td></tr>
+  			<!-- ngIf: showField('linkedinURL') --><tr ng-if="showField('linkedinURL')" class="ng-scope">
+  				<td width="25" height="30" valign="top" style="vertical-align: top;"><a href="https://www.linkedin.com/company/mycompany404" target="_blank" rel="noopener"><img border="0" width="26" height="25" ng-src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/hexagonal-logo/ln.png" alt="linkedin icon" style="border:0; height:25px; width:26px;" src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/hexagonal-logo/ln.png"></a></td>
+  			</tr><!-- end ngIf: showField('linkedinURL') -->
+  			<!-- ngIf: showField('instagramURL') --><tr ng-if="showField('instagramURL')" class="ng-scope">
+  				<td width="25" height="30" valign="top" style="vertical-align: top;"><a href="https://www.instagram.com/mycompany404/" target="_blank" rel="noopener"><img border="0" width="26" height="25" ng-src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/hexagonal-logo/it.png" alt="instagram icon" style="border:0; height:25px; width:26px;" src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/hexagonal-logo/it.png"></a></td>
+  			</tr><!-- end ngIf: showField('instagramURL') -->
+  			<!-- ngIf: showField('pinterestURL') --><tr ng-if="showField('pinterestURL')" class="ng-scope">
+  				<td width="25" height="30" valign="top" style="vertical-align: top;"><a href="https://pinterest.com/mycompany404/" target="_blank" rel="noopener"><img border="0" width="26" height="25" ng-src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/hexagonal-logo/pt.png" alt="pinterest icon" style="border:0; height:25px; width:26px" src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/hexagonal-logo/pt.png"></a></td>
+  			</tr><!-- end ngIf: showField('pinterestURL') -->
+  		</tbody></table>
+
+    </td>
+
+
+   </tr>
+
+   <tr>
+  	<!-- ngIf: showField('banner') -->
+    </tr>
+
+   <tr>
+  	<!-- ngIf: showField('disclaimer') -->
+    </tr>
+  </tbody>
+  </table>
+</body>
+</html>

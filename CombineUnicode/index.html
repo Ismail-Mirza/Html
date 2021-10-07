@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Combine Unicode</title>
+  <style media="screen">
+    .container{
+      margin: 0;
+      width: 100%;
+      height: 100vh;
+      background: #f5fffa;
+      color:cyan;
+      font-size:25px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+  </div>
+
+
+ <script type="text/javascript">
+   let output=document.querySelector(".container");
+   UnicodeMap = {
+     //1st row
+     96:8216,
+     49:2535,
+     50:2536,
+     51:2537,
+     52:2538,
+     53:2539,
+     54:2540,
+     55:2541,
+     56:2542,
+     57:2543,
+     48:2534,
+     45:45,
+     61:61,
+     //1st row shift
+     126:8220,
+     33:33,
+     64:2533,
+     35:35,
+     36:2547,
+     37:37,
+     94:2483,
+     38:2433,
+     42:42,
+     40:40,
+     41:41,
+     95:209,
+     43:43,
+
+     //2nd row
+     113:2457,
+     119:2479,
+     101:2465,
+     114:2474,
+     116:2463,
+     121:2458,
+     117:2460,
+     105:2489,
+     111:2455,
+     112:2524,
+     91:91,
+     93:93,
+     92:2510,
+     //2nd row shift
+     81:2434,
+     87:2527,
+     69:2466,
+     82:2475,
+     84:2464,
+     89:2459,
+     85:2461,
+     73:2462,
+     79:2456,
+     80:2525,
+     123:123,
+     125:125,
+     124:2435,
+     //3rd row
+     97:2499,
+     115:2497,
+     100:2495,
+     102:2494,
+     103:2509,
+     104:2476,
+     106:2453,
+     107:2468,
+     108:2470,
+     59:59,
+     39:8217,
+     //3rd row shift
+     65:2509,
+     83:2498,
+     68:2496,
+     70:2437,
+     71:2404,
+     72:2477,
+     74:2454,
+     75:2469,
+     76:2471,
+     58:58,
+     34:8221,
+     //4th row
+     122:2480,
+     120:2451,
+     99:2503,
+     118:2480,
+     98:2472,
+     110:2488,
+     109:2478,
+     44:44,
+     46:46,
+     47:47,
+     //4th row shift
+     90:2479,
+     88:2519,
+     67:2504,
+     86:2482,
+     66:2462,
+     78:2487,
+     77:2486,
+     60:60,
+     62:62,
+     63:63,
+     32:32
+   }
+   vowel_Map = {
+     102:2438,
+     100:2439,
+     115:2441,
+     97:2443,
+     99:2447,
+     120:2451,
+     122:2480,
+     //shift
+     70:2437,
+     68:2440,
+     83:2442,
+     67:2448,
+     88:2452,
+     90:2479
+
+   }
+   // str =""
+   // for(val of myMap.keys()){
+   //    str += val + ' '
+   // }
+   function codeInVowel(code){
+     vowels = [102,
+      100,
+      115,
+      97,
+      99,
+      120,
+      122,
+      //shift
+      70,
+      68,
+      83,
+      67,
+      88,
+      90]
+     for(let vowel of vowels){
+       if (vowel==code){
+         return true;
+       }
+     }
+     return false;
+   }
+   
+   let first_kar=0;
+   let pre_code=0
+   window.addEventListener("keypress",(event)=>{
+        let code = event.charCode;
+        if (code==65){
+          output.innerHTML += String.fromCharCode(2480,2509);
+        }
+        else if (pre_code != 2509 && (code == 67 || code == 100 || code == 99) ){
+              first_kar =UnicodeMap[code];
+              console.log("First  kar "+first_kar);
+        }else{
+          if (first_kar != 0){
+            //do that
+            console.log("i ma in first kar block");
+              output.innerHTML += String.fromCharCode(UnicodeMap[code],first_kar);
+              first_kar=0;
+          }
+          else if(pre_code==2509){
+            pre_code = 0;
+            if(codeInVowel(code)){
+                console.log("UnicodeMap "+vowel_Map[code]);
+                //look for vowel
+                //delete last character
+                output.innerHTML = output.innerHTML.slice(0,-1);
+                //asign new char
+                output.innerHTML += String.fromCharCode(vowel_Map[code]);
+
+            }
+          }
+          else{
+              if (UnicodeMap[code] == 32){
+                output.innerHTML +="&nbsp;&nbsp;";
+              }
+              else{
+                output.innerHTML += String.fromCharCode(UnicodeMap[code]);
+              }
+
+          }
+        }
+
+    //store previous code
+    pre_code = UnicodeMap[code];
+   })
+
+ </script>
+</body>
+</html>

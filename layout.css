@@ -1,0 +1,121 @@
+body {
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #dddddd;
+}
+*{
+    box-sizing: border-box;
+}
+h2 {
+    font-size: 30px;
+    color: #1E1E1E;
+}
+.clear {
+    clear: both;
+}
+.container {
+    max-width: 960px;
+    background: #ffffff;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+
+}
+
+nav {
+    float: left;
+    width: 100%;
+    background: #dddddd;
+    text-align: center;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+
+}
+header {
+    float: left;
+    width: 100%;
+    background: #dddddd;
+    text-align: center;
+    padding: 100px 10px;
+    margin-bottom: 20px;
+
+}
+.section1 {
+    float: left;
+    width: 100%;
+    background: #dddddd;
+    text-align: center;
+    padding: 50px 10px;
+
+}
+
+.section1 .content {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.section1 .content .card {
+    width: 25%;
+    float: left;
+    padding: 0px 10px;
+
+}
+.section1 .content .card .box {
+    background: gray;
+    color: #ffff;
+    font-size: 20px;
+    padding: 40px 10px;
+}
+
+.section2 {
+    float: left;
+    width: 100%;
+    background: #dddddd;
+    text-align: center;
+    padding: 50px 10px;
+    margin-top: 20px;
+}
+
+.section2 .content {
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.section2 .content .left {
+    width: 50%;
+    float: left;
+    padding: 0px 10px;
+
+}
+.section2 .content .left .card {
+    background: gray;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 150px 15px;
+}
+
+.section2 .content .right {
+    width: 50%;
+    float: left;
+    padding: 0px 10px;
+
+}
+.section2 .content .right .card {
+    background: gray;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 35px 15px;
+    margin-bottom: 20px;
+}
+
+footer {
+    float: left;
+    width: 100%;
+    background: #dddddd;
+    text-align: center;
+    padding: 10px 5px;
+    margin-top: 20px;
+
+}

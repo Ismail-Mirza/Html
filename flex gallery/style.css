@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+
+.containe {
+width:100rem;
+height:28rem;
+background: #ccc;
+margin: 5rem auto 0rem auto;
+display: flex;
+box-shadow: #f184b9 1.5rem 0rem 5rem;
+
+border: 0.4rem solid #2066ff;
+border-radius: 0.3rem;
+border-bottom: none;
+padding: 0.5rem;
+padding-bottom: 0rem;
+
+}
+.container {
+width:1000px;
+height:280px;
+background: #ccc;
+margin: 0px auto 0px auto;
+display: flex;
+box-shadow: #f184b9 15px 0px 50px;
+border: 4px solid #2066ff;
+border-top:0px ;
+padding: 5px;
+padding-top: 0px;
+
+
+}
+.col{
+  height: 100%;
+  flex:1;
+  color:#fff;
+  box-sizing: border-box;
+  padding: 10px 25px 25px 25px;
+  position: relative;
+  transition: 0.6s;
+}
+.co{
+  height: 100%;
+  flex:1;
+  color:#fff;
+  box-sizing: border-box;
+  padding: 10px 25px 25px 25px;
+  position: relative;
+  transition: 0.6s;
+}
+.col:nth-child(1){
+  background: #283491;
+}
+.col:nth-child(2){
+  background: #f18684;
+}
+.col:nth-child(3){
+  background: #6ee2f1;
+}
+.col:nth-child(4){
+  background: #f184c9;
+}
+.co:nth-child(1){
+  background: #512891;
+}
+.co:nth-child(2){
+  background: #f184b9;
+}
+.co:nth-child(3){
+  background: #6cc2f1;
+}
+.co:nth-child(4){
+  background: #f15574;
+}
+
+h2{
+  text-align: ;
+  font-size: 22px;
+  margin-bottom: px;
+}
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+button{
+  border: 1px solid #fff;
+  padding: 10px;
+  background: transparent;
+  margin: 10px;
+  margin-left: 0px;
+  border-radius: 30px;
+  color:#fff;
+  outline: none;
+  cursor:pointer;
+}
+.col img{
+width: 200px;
+height: 90%;
+position: absolute;
+right: 0;
+bottom: 0px;
+}
+.co img{
+
+  width: 200px;
+  height: 90%;
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+}
+
+.caption{
+  display: none;
+  max-width: 250px;
+}
+.col:hover{
+  flex-grow: 2.5;
+
+}
+.co:hover{
+  flex-grow: 2.5;
+
+}
+.col:hover .caption{
+  display:block;
+}
+.co:hover .caption{
+  display:block;
+}
+.col:hover h2{
+  text-align: left;
+}
+.co:hover h2{
+  text-align: left;
+}

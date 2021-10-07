@@ -1,0 +1,38 @@
+body{
+  margin: 0;
+}
+#cta,#cta2{
+  position: absolute;
+  margin: 10em auto 0 auto;
+  left: 0;
+  right: 0;
+  width: 15%;
+  background: none;
+  border: 1px solid #fff;
+  padding: 15px;
+  color: #fff;
+  font-size: 1.5em;
+  cursor: pointer;
+  outline: 0;
+}
+p{
+  font-size: 1.2em;
+}
+#cta2{
+  width: auto;
+  margin: 10px auto;
+  background: #29ABE2;
+}
+#blip{
+  position: absolute;
+  color: #29ABE2;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  width: 40%;
+  transform: translateY(-800px);
+
+}
+.polymorph{
+  fill:#29abe2;
+}

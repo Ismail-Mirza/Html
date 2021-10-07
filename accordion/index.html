@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    body{
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: center;
+      -ms-align-items: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #95a5a6;
+    }
+    .accordion{
+      max-width: 800px;
+    }
+    .accordion .contentbox{
+      position: relative;
+      margin: 10px 20px;
+    }
+    .accordion .contentbox .label{
+      position: relative;
+      padding: 10px;
+      background: #2d3436;
+      color: #fff;
+      cursor: pointer;
+    }
+    .accordion .contentbox .label::before{
+      content: "+";
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    .accordion .contentbox.active .label::before{
+      content: "-";
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    .accordion .contentbox .content{
+      position: relative;
+      background: #636e72;
+      color: #dfe6e9;
+      height: 0;
+      overflow: hidden;
+      transition: 0.5s;
+      overflow-y: auto;
+
+    }
+    .accordion .contentbox.active .content{
+      height: 150px;
+      padding: 10px;
+    }
+    header{
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      background-color: #ddd;
+
+    }
+
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="home">Home</div>
+    <div class="servics">Servics</div>
+    <div class="about">About</div>
+  </header>
+  <div class="accordion">
+    <div class="contentbox">
+      <div class="label">List One</div>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, quia quidem vel. Ipsum fugit necessitatibus earum. Autem quibusdam, delectus, quae deserunt, quas in aliquid quam minima id quasi perferendis rerum consectetur accusamus eaque expedita quos sapiente laborum voluptatibus excepturi voluptas illum. Accusantium nisi blanditiis vitae dicta quos! Perspiciatis, sapiente sequi!
+        </p>
+      </div>
+    </div>
+    <div class="contentbox">
+      <div class="label">List two</div>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, quia quidem vel. Ipsum fugit necessitatibus earum. Autem quibusdam, delectus, quae deserunt, quas in aliquid quam minima id quasi perferendis rerum consectetur accusamus eaque expedita quos sapiente laborum voluptatibus excepturi voluptas illum. Accusantium nisi blanditiis vitae dicta quos! Perspiciatis, sapiente sequi!
+        </p>
+      </div>
+    </div>
+    <div class="contentbox">
+      <div class="label">List Three</div>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, quia quidem vel. Ipsum fugit necessitatibus earum. Autem quibusdam, delectus, quae deserunt, quas in aliquid quam minima id quasi perferendis rerum consectetur accusamus eaque expedita quos sapiente laborum voluptatibus excepturi voluptas illum. Accusantium nisi blanditiis vitae dicta quos! Perspiciatis, sapiente sequi!
+        </p>
+      </div>
+    </div>
+    <div class="contentbox">
+      <div class="label">List Four</div>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, quia quidem vel. Ipsum fugit necessitatibus earum. Autem quibusdam, delectus, quae deserunt, quas in aliquid quam minima id quasi perferendis rerum consectetur accusamus eaque expedita quos sapiente laborum voluptatibus excepturi voluptas illum. Accusantium nisi blanditiis vitae dicta quos! Perspiciatis, sapiente sequi!
+        </p>
+      </div>
+    </div>
+  </div>
+  <script>
+    const accordion = document.getElementsByClassName("contentbox");
+    for (var i = 0; i < accordion.length; i++) {
+      accordion[i].addEventListener("click", function(){
+      this.classList.toggle("active")
+    });
+  }
+  </script>
+
+
+</body>
+</html>

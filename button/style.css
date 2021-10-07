@@ -1,0 +1,105 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* style one */
+.btn{
+  margin-right: 10px;
+  border: 2px solid yellow;
+  padding:10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+.btn::after{
+  content: "";
+position: absolute;
+background: aquamarine;
+top:0;
+left:0;
+width: 100%;
+height:0%;
+z-index: -1;
+transition: all 0.5s ease 0s;
+}
+.btn:hover:after{
+height:100%;
+}
+/* style two */
+.btn2{
+  margin-right: 10px;
+  border: 2px solid yellow;
+  padding:10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+.btn2::after{
+content: "";
+position: absolute;
+background: aquamarine;
+top:0;
+left:0;
+width:0%;
+height:100%;
+z-index: -1;
+transition: all 0.5s ease 0s;
+}
+.btn2:hover:after{
+  width:100%;
+}
+/* style three */
+.btn3{
+  margin-right: 10px;
+  border: 2px solid yellow;
+  padding:10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.btn3::before{
+content: "";
+background: aquamarine;
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+width:0%;
+height:100%;
+z-index: -1;
+transition: all 0.5s ease 0s;
+}
+.btn3:hover:before{
+  width:100%;
+}
+/* style four */
+.btn4{
+  margin-right: 10px;
+  border: 2px solid yellow;
+  padding:10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.btn4::before{
+content: "";
+background: aquamarine;
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+width:100%;
+height: 0;
+
+z-index: -1;
+transition: all 0.5s ease 0s;
+}
+.btn4:hover:before{
+  height: 100%;
+}
